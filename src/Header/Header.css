@@ -14,7 +14,7 @@ header {
 
 }
 header .logo {
-    margin-left: -4em;
+    margin-left: 1em;
     align-self: center;
     display: flex;
     margin-top: 0rem;
@@ -47,25 +47,26 @@ header nav ul li:hover{
     color: black;
 
 }
-header nav ul li.active {
+header nav ul li:active {
     color:#DDC378;
 }
-header nav ul li.active:hover {
+header nav ul li:active:hover {
     text-shadow: 0 0.015em #DDC378,0 -0.015em #DDC378,0.01em 0 #DDC378,-0.01em 0 #DDC378;
 }
 
-.logo h1 {
+header .logo h1 {
+    transform: translateX(-2.73em);
     text-decoration: underline;
     text-decoration-color: whitesmoke;
     transition: text-decoration-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
-.fade-in a {
+header .fade-in a {
     color: whitesmoke;
     transition: color 0.2s;
 }
 
-.logo:hover .fade-in a, .logo:hover h1{
-    transform: translateX(3em);
+header .logo:hover .fade-in a, header .logo:hover h1{
+    transform: translateX(0em);
     color: black;
     text-decoration-color:black;
     -webkit-transition: transform 0.3s ease,color 0.3s ease, text-decoration-color 0.3s ease;
