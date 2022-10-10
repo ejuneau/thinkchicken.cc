@@ -1,0 +1,10 @@
+#HomeContainer {
+    background-image: url("../../images/Home.png");
+    background-size: cover;
+    background-position: 0% 30%;
+    background-color: black;
+    background-repeat: no-repeat;
+    width:100%;
+    margin: 0 0;
+    
+}
