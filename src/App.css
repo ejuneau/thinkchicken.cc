@@ -1,12 +1,19 @@
 /*General rules*/
 
 * {
-    outline: 0px solid red; /*comment this out before publishing!!*/
+    outline: 1px solid red; /*comment this out before publishing!!*/
 }
 
 a {
     color:black;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+    transition: text-decoration-color 0.2s;
+}
+
+a:hover {
+    text-decoration-color: black;
+    transition: text-decoration-color 0.3s;
 }
 
 body {
@@ -59,43 +66,49 @@ main {
 
 }
 main h3, main p {
-    position: relative;
     color: whitesmoke;
     text-shadow: 0 0.015em 10px #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
 }
 .text-container {
     position: relative;
     display: flex;
-    width: 40%;
     height: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     justify-content: center;
     margin-left: 3em;
+    margin-right: 3em;
+    min-height: 60vh;
+    max-height: 60vh;
+    /* align-items: flex-end; */
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: 5em; */
+    /* text-align:right; */
+    max-width: 50%;
+    min-width: 40em;
 }
-main .text-container h3 {
+.cover {
+    min-height: 100%;
+    display: flex;
+    /* align-items: flex-end; */
+}
+.text-container h3 {
     font-size: 4em;
 }
 
-main .text-container p {
+.text-container p {
     font-size: 2em;
 }
 
 .intro {
-    height: 60vh;
+    min-height:60vh;
+    max-height: 120vh;
     position: relative;
     top: 3.8em;
     background-color: whitesmoke;
-}
-
-.intro .text-container {
-    max-width: 80%;
-    min-width: 50%;
-    align-items: flex-end;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: 5em;
-    text-align:right;
+    display: flex;
+    flex-direction: column;
 }
 .intro .text-container h4 {
     font-size: 2.5em;
@@ -105,3 +118,11 @@ main .text-container p {
     font-size: 1.3em;
 }
 
+.first {
+    align-self: flex-end;
+    text-align: end;
+}
+
+.second {
+    align-self: flex-start;
+}

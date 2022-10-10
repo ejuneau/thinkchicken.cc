@@ -12,17 +12,17 @@ class Header extends React.Component {
       <>
         <header>
           <div className="logo" id="Home" onClick={this.handleClick}>
-            <h1 className="fade-in" id="Home" onClick={this.handleClick}><a href="/.">https://</a></h1>
-            <h1 id="Home" onClick={this.handleClick}><a href="/.">thickchicken</a></h1>
-            <h1 className="fade-in" id="Home" onClick={this.handleClick}><a href="/.">.cc</a></h1>
+            <h1 className="fade-in" id="Home" onClick={this.handleClick}><a href="/">https://</a></h1>
+            <h1 id="Home" onClick={this.handleClick}><a href="/">thickchicken</a></h1>
+            <h1 className="fade-in" id="Home" onClick={this.handleClick}><a href="/">.cc</a></h1>
           </div>
           <nav>
             <ul>
-              <li id="Home" onClick={this.handleClick}><a href="./">Home</a></li>
-              <li id="About" onClick={this.handleClick}><a href="./">About</a></li>
-              <li id="Services" onClick={this.handleClick}><a href="./">Services</a></li>
-              <li id="Contact" onClick={this.handleClick}><a href="./">Contact</a></li>
-              <li id="Login" onClick={this.handleClick}><a href="./">Login</a></li>
+              <li id="Home" onClick={this.handleClick}><a href="/">Home</a></li>
+              <li id="About" onClick={this.handleClick}><a href="/About">About</a></li>
+              <li id="Services" onClick={this.handleClick}><a href="/Services">Services</a></li>
+              <li id="Contact" onClick={this.handleClick}><a href="/Contact">Contact</a></li>
+              <li id="Login" onClick={this.handleClick}><a href="/Login">Login</a></li>
             </ul>
           </nav>
         </header>

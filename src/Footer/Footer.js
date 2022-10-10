@@ -11,7 +11,11 @@ class Footer extends React.Component {
     return(
         <footer>
             <div className="footer-left">
-                <h1 className="logo" id="Home" onClick={this.handleClick}>thinkchicken.cc</h1>
+            <div className="logo" id="Home" onClick={this.handleClick}>
+            <h1 className="fade-in" id="Home" onClick={this.handleClick}><a href="/">https://</a></h1>
+            <h1 id="Home" onClick={this.handleClick}><a href="/">thickchicken</a></h1>
+            <h1 className="fade-in" id="Home" onClick={this.handleClick}><a href="/">.cc</a></h1>
+          </div>
                 <p>A chickencloud project.</p>
                 <p>Iteration 5, 07/10/2022</p>
                 <p>Snoring loudly from a closet in The Village 🏳️‍🌈</p>
@@ -19,11 +23,11 @@ class Footer extends React.Component {
             <div className="footer-center">
                 <nav>
                     <ul>
-                        <li id="Home" onClick={this.handleClick}>Home</li>
-                        <li id="About" onClick={this.handleClick}>About</li>
-                        <li id="Services" onClick={this.handleClick}>Services</li>
-                        <li id="Contact" onClick={this.handleClick}>Contact</li>
-                        <li id="Login" onClick={this.handleClick}>Login</li>
+                        <li id="Home" onClick={this.handleClick}><a href="/">Home</a></li>
+                        <li id="About" onClick={this.handleClick}><a href="/About">About</a></li>
+                        <li id="Services" onClick={this.handleClick}><a href="/Services">Services</a></li>
+                        <li id="Contact" onClick={this.handleClick}><a href="/Contact">Contact</a></li>
+                        <li id="Login" onClick={this.handleClick}><a href="/Login">Login</a></li>
                     </ul>
                 </nav>
             </div>

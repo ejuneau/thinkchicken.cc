@@ -8,3 +8,8 @@
     margin: 0 0;
     
 }
+
+#HomeContainer h3, #HomeContainer p {
+    max-width: 30%;
+    min-width: 415px;
+}

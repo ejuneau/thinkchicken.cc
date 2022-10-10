@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { FaAngleUp } from "react-icons/fa";
-
+import { 
+  BrowserRouter,
+  Routes,
+  Route 
+} from 'react-router-dom';
 
 import './App.css';
 import './ScrollToTop.css';
@@ -15,44 +19,28 @@ import { Contact } from './Slices/Contact/Contact';
 import { Login } from './Slices/Login/Login';
 
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state = {
-      activeSlice: <Home />
-    }
-  }
-  setActiveSlice = slice => {
-    switch(slice) {
-      case "Home":
-        return <Home />;
-      case "About":
-        return <About />;
-      case "Services":
-        return <Services />;
-      case "Contact":
-        return <Contact />;
-      case "Login":
-        return <Login />;
-      default:
-        return <Home />;
-    }
-  }
-    
+
   handleClick = e => {
  
-    this.setState({ activeSlice: this.setActiveSlice(e.target.id) })
   }
 
 
 
   render() {
     return(
-      <>
+      <BrowserRouter>
       <Header handleClick={this.handleClick} />
-      {this.state.activeSlice}
-      <Footer handleClick={this.handleClick} />
-      <ScrollToTop />
-      </>
+      
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Login" element={<Login />} />
+        </Routes>
+        <Footer handleClick={this.handleClick} />
+        <ScrollToTop />
+      </BrowserRouter>
     )
   }
 
