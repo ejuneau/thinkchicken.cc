@@ -1,7 +1,7 @@
 /*General rules*/
 
 * {
-    outline: 1px solid red; /*comment this out before publishing!!*/
+    outline: 0px solid red; /*comment this out before publishing!!*/
 }
 
 a {
