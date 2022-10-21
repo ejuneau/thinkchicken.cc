@@ -1,0 +1,31 @@
+#PNFContainer {
+    background-image: url("../../images/404.png");
+    background-size: cover;
+    background-position: 0% 50%;
+    background-color: black;
+    background-repeat: no-repeat;
+    height:81.2vh;
+    margin: 0 0;
+}
+#PNFContainer p a {
+    text-decoration: underline solid transparent;
+    color: whitesmoke;
+    transition: text-decoration 0.3s ease;
+}
+#PNFContainer p a:hover {
+    text-decoration: underline solid whitesmoke;
+    transition: text-decoration 0.3s ease;
+}
+
+#PNFContainer p, #PNFContainer h3 {
+    text-shadow: none;
+}
+
+#PNFContainer .text-container {
+    max-width: 30%;
+}
+
+#PNFContainer .cover {
+    margin-right: auto;
+    left: 2em;
+}

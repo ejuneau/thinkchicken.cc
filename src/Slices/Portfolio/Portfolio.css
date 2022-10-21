@@ -1,0 +1,103 @@
+#PortfolioContainer {
+    background-image: url("../../images/Portfolio.jpeg");
+    background-size: cover;
+    background-position: 0% 50%;
+    background-color: black;
+    background-repeat: no-repeat;
+    width:100%;
+    margin: 0 0;
+
+}
+
+#PortfolioContainer .cover {
+    max-width: 40%;
+    max-height: 80%;
+    justify-content: flex-end;
+}
+
+#PortfolioContainer .cover p {
+    margin-bottom: 5em;
+}
+
+
+#ProjectCarousel {
+    min-width: 100%;
+    height: 25vw;
+    background-color: whitesmoke;
+}
+
+#ProjectCarousel .project {
+    height: 100%;
+    margin: 0 3em;
+    min-width: 50%;
+    outline: solid 1px red;
+
+}
+
+.carousel  p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 3%;
+}
+.carousel a {
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+}
+
+.carousel__back-button, .carousel__next-button {
+    all: unset;
+    font-size: 1.5em;
+    font-family: 'Mulish', sans-serif;
+    color: black; 
+}
+
+.carousel h4 {
+    font-family: 'Libre Bodoni', serif;
+    font-weight: normal;
+    font-size: 3em;
+    color: black;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.buttons {
+    outline: solid 0px red;
+    display: flex;
+    position: relative;
+    bottom: 20vh;
+    justify-content: space-around;
+}
+.buttonSpacer {
+    width: 35%;
+
+}
+
+.dotGroup {
+    position: relative;
+    top: 15vh;
+}
+
+.backButton, .nextButton, .carousel a {
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+    transition: text-decoration-color 0.3 ease;
+}
+
+.backButton:hover, .nextButton:hover, .carousel a:hover {
+    text-decoration-color: black;
+    transition: text-decoration-color 0.2 ease;
+}
+
+.viewProject {
+    margin-left: 70%;
+}

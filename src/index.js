@@ -1,24 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { FaAngleUp } from "react-icons/fa";
+<<<<<<< Updated upstream
 import { 
   BrowserRouter,
   Routes,
   Route 
 } from 'react-router-dom';
+=======
+import { BrowserRouter } from 'react-router-dom';
+>>>>>>> Stashed changes
 
 import './App.css';
 import './ScrollToTop.css';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
+import {Router} from './Directory/Directory';
+
+
 import { Home } from './Slices/Home/Home';
 import { About } from './Slices/About/About';
 import { Services } from './Slices/Services/Services';
+import { Portfolio } from './Slices/Portfolio/Portfolio';
 import { Contact } from './Slices/Contact/Contact';
 import { Login } from './Slices/Login/Login';
 
+
+
+
 class App extends React.Component {
+
+  directory = [Home, About, Services, Portfolio, Contact, Login];
 
   handleClick = e => {
  
@@ -29,17 +42,10 @@ class App extends React.Component {
   render() {
     return(
       <BrowserRouter>
-      <Header handleClick={this.handleClick} />
-      
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
-        <Footer handleClick={this.handleClick} />
-        <ScrollToTop />
+      <Header handleClick={this.handleClick} directory={this.directory}/>
+      <Router directory={this.directory}/>
+      <Footer handleClick={this.handleClick} directory={this.directory}/>
+      <ScrollToTop />
       </BrowserRouter>
     )
   }

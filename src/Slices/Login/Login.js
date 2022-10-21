@@ -2,6 +2,10 @@ import React from "react";
 
 
 class Login extends React.Component {
+    name = "Login";
+    componentDidMount() {
+        document.title="Login | thinkchicken.cc"; 
+     }
 
     render() {
         return (

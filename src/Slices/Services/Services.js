@@ -3,6 +3,10 @@ import React from "react";
 
 class Services extends React.Component {
 
+    componentDidMount() {
+        document.title="Services | thinkchicken.cc"; 
+     }
+
     render() {
         return (
             <>

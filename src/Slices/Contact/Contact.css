@@ -1,0 +1,26 @@
+#ContactContainer {
+    background-image: url("../../images/Contact.jpg");
+    background-size: cover;
+    background-position: 0% 30%;
+    background-color: black;
+    background-repeat: no-repeat;
+    width:100%;
+    margin: 0 0;
+}
+
+
+#ContactContainer .first {
+    /* align-items:flex-end; */
+    text-align: end;
+    margin-left: auto;
+    margin-right: 3em;
+}
+#ContactContainer .second {
+    text-align: start;
+    margin-left: 3em;
+    margin-right: auto;
+}
+
+#ContactContainer .cover {
+    max-width: 30%;
+}

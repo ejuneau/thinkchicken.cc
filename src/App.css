@@ -70,7 +70,7 @@ main h3, main p {
     text-shadow: 0 0.015em 10px #101010,0 -0.015em #101010,0.01em 0 #101010,-0.01em 0 #101010;
 }
 .text-container {
-    position: relative;
+    /* position: relative; */
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -102,10 +102,16 @@ main h3, main p {
 }
 
 .intro {
+<<<<<<< Updated upstream
     min-height:60vh;
     max-height: 120vh;
     position: relative;
     top: 3.8em;
+=======
+    height: 100%;
+    /* position: relative;
+    top: 3.8em; */
+>>>>>>> Stashed changes
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;

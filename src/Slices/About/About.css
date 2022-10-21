@@ -17,4 +17,20 @@
     text-align: start;
     margin-left: 3em;
     margin-right: auto;
+<<<<<<< Updated upstream
+=======
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+}
+
+.grip {
+    margin-left: auto;
+    margin-right: auto;
+    height: 12vh;
+>>>>>>> Stashed changes
 }

@@ -2,6 +2,10 @@ import React from "react";
 import './Home.css'
 
 class Home extends React.Component {
+    name = "Home";
+    componentDidMount() {
+        document.title="Home | thinkchicken.cc"; 
+     }
 
     render() {
         return (

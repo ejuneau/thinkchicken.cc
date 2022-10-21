@@ -1,8 +1,19 @@
 import React from "react";
+<<<<<<< Updated upstream
 import './About.css'
+=======
+import './About.css';
+import { FaEllipsisV } from "react-icons/fa";
+
+>>>>>>> Stashed changes
 
 
 class About extends React.Component {
+    name = "About";
+    
+    componentDidMount() {
+       document.title="About | thinkchicken.cc"; 
+    }
 
     render() {
         return (
@@ -33,5 +44,23 @@ class About extends React.Component {
     }
 }
 
+<<<<<<< Updated upstream
+=======
+class Timeline extends React.Component {
+    render() {return(
+        <>
+        <div className="timeline text-container">
+            <h3>A brief history of the chickencloud</h3>
+            <h4>March 21, 2021</h4>
+            <p>The server spins up for the first time. Its parts are sourced from <a href="https://usedservers.ca/">usedservers.ca</a> and runs Proxmox Virtual Environment.  </p>
+            <FaEllipsisV className="grip" />
+            <h4>October 08 2022</h4>
+            <p>Due to an invalid hard drive configuration all data on the server is wiped.</p>
+        </div>
+        </>
+    );}
+}
+
+>>>>>>> Stashed changes
 
 export {About};
