@@ -32,9 +32,7 @@ class About extends React.Component {
                     <p>To put it succinctly, the chickencloud is the name I gave my server. More technically, the server is a hypervisor running Proxmox Virtual Environment, which I use to host a number of containers and virtual machines. I built this server with used enterprise hardware that I was able to find for a cheap price, learning absolutely everything on my own. <br /><br /> As I mentioned above, this website is a living portfolio of my skills, evolving and expanding as I learn more skills. If you decide to explore my commit history, you might notice that the earliest version on log is iteration 5. Learning involves trying new things and making mistakes, and unfortunately that involves losing hours of work and more than a few terabytes of data along the way. <br /><br /> Thankfully, I figured out version control not long after that.</p>
                 </div>
             </div>
-            <div className="timeline">
-                <h3>A brief history of the chickencloud</h3>
-            </div>
+            <Timeline />
             </>
         );
     }
@@ -43,7 +41,7 @@ class About extends React.Component {
 class Timeline extends React.Component {
     render() {return(
         <>
-        <div className="timeline text-container">
+        <div className="timeline">
             <h3>A brief history of the chickencloud</h3>
             <h4>March 21, 2021</h4>
             <p>The server spins up for the first time. Its parts are sourced from <a href="https://usedservers.ca/">usedservers.ca</a> and runs Proxmox Virtual Environment.  </p>

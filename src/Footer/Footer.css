@@ -16,33 +16,34 @@ footer {
     position: relative;
     bottom:0;
     width: 100%;
-    top: 2.8em;
     height: 10em;
-    /* top:3.84em; */
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     margin-top: auto;
     background-color:#2E374D;
     color: whitesmoke;
 }
 
-footer a, p {
+footer a, footer p {
     color: whitesmoke;
 }
 
 footer .footer-center {
     height: 100%;
-    transform: translateX(-50%);
+    transform: translateX(-181%);
 }
 footer .footer-center nav {
     height: 100%;
 }
 footer .footer-center nav ul {
     height: 100%;
+    width: 100%;
     margin: 0;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 footer .footer-center nav ul li, footer a {
@@ -60,27 +61,25 @@ footer .footer-center nav ul li:hover, footer a:hover {
 }
 
 footer .footer-left {
-    margin-left: 1em;
-    margin-right: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateX(2em); /*needed to keep .footer-center centered*/
 }
 
-footer .footer-left h1, p, a {
+footer .footer-left h1, .footer-left p, .footer-left a {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 footer .footer-right {
-    margin-right: 6em;
-    margin-left: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform:translateX(-6em); /* needed to keep .footer-center centered*/
 }
 
 footer .logo h1 {
