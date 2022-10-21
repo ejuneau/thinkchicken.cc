@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { FaAngleUp } from "react-icons/fa";
-<<<<<<< Updated upstream
-import { 
-  BrowserRouter,
-  Routes,
-  Route 
-} from 'react-router-dom';
-=======
 import { BrowserRouter } from 'react-router-dom';
->>>>>>> Stashed changes
 
 import './App.css';
 import './ScrollToTop.css';

@@ -1,11 +1,7 @@
 import React from "react";
-<<<<<<< Updated upstream
-import './About.css'
-=======
 import './About.css';
 import { FaEllipsisV } from "react-icons/fa";
 
->>>>>>> Stashed changes
 
 
 class About extends React.Component {
@@ -44,8 +40,6 @@ class About extends React.Component {
     }
 }
 
-<<<<<<< Updated upstream
-=======
 class Timeline extends React.Component {
     render() {return(
         <>
@@ -61,6 +55,5 @@ class Timeline extends React.Component {
     );}
 }
 
->>>>>>> Stashed changes
 
 export {About};

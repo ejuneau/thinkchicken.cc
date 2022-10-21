@@ -102,16 +102,9 @@ main h3, main p {
 }
 
 .intro {
-<<<<<<< Updated upstream
-    min-height:60vh;
-    max-height: 120vh;
-    position: relative;
-    top: 3.8em;
-=======
     height: 100%;
     /* position: relative;
     top: 3.8em; */
->>>>>>> Stashed changes
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
