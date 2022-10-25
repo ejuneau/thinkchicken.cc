@@ -13,7 +13,7 @@ header {
     background-color: whitesmoke;
 
 }
-header .logo {
+.logo {
     margin-left: 1em;
     align-self: center;
     display: flex;
@@ -51,23 +51,4 @@ header nav ul li:active {
 }
 header nav ul li:active:hover {
     text-shadow: 0 0.015em #DDC378,0 -0.015em #DDC378,0.01em 0 #DDC378,-0.01em 0 #DDC378;
-}
-
-header .logo h1 {
-    transform: translateX(-2.73em);
-    text-decoration: underline;
-    text-decoration-color: whitesmoke;
-    transition: text-decoration-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-}
-header .fade-in a {
-    color: whitesmoke;
-    transition: color 0.2s;
-}
-
-header .logo:hover .fade-in a, header .logo:hover h1{
-    transform: translateX(0em);
-    color: black;
-    text-decoration-color:black;
-    -webkit-transition: transform 0.3s ease,color 0.3s ease, text-decoration-color 0.3s ease;
-    transition: transform 0.3s ease,color 0.3s ease, text-decoration-color 0.3s ease; /*for compatibility*/
 }

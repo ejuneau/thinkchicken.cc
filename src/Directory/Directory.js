@@ -1,24 +1,23 @@
 import React from 'react';
 import {
     Navigate,
+    Route,
     Routes,
-    Route 
   } from 'react-router-dom';
 
 import { PageNotFound } from '../Slices/PageNotFound/PageNotFound';
 
-const returnComponent = (Component) => {
-    return <Component />
-}
+
+
 class Navbar extends React.Component {
     render() {
         return(
             <nav>
                 <ul>
                     {
-                        this.props.directory.map(page => {
-                            return <li id={page.name} onClick={this.handleClick} key={`${page.name}`}><a href={page.name === "Home" ? "/" : `/${page.name}`}>{page.name}</a></li>
-                        })
+                        this.props.routes.map(({name, route, comp}) => ((
+                            <li key={name}>< a href={route}>{name}</a></li>
+                        )))
                     }
                 </ul>
             </nav>
@@ -31,9 +30,9 @@ class Router extends React.Component {
         return(
             <Routes>
                 {
-                    this.props.directory.map(page => {
-                        return <Route path={page.name === "Home" ? "/" : `/${page.name}`} element={returnComponent(page)} key={page.name} />
-                    })
+                    this.props.routes.map(({name, route, comp}) => ((
+                        <Route key={name} exact path={route === "/Home" ? "/" : route} element={comp} />
+                    )))
                 }
                 <Route path="/Home" element={ <Navigate to="/" />} />
                 <Route path="*" element={ <PageNotFound /> } />

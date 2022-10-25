@@ -60,6 +60,7 @@ main {
     width: 100%;
     position: relative;
     top: 3.8em;
+    min-height: 81.2vh;
     height: 100vh;
     margin-top: 0;
     margin-bottom: 0;
@@ -124,4 +125,44 @@ main h3, main p {
 
 .second {
     align-self: flex-start;
+}
+
+/*Mobile Formatting*/
+.mobile-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.mobile-head h1 {
+    margin-left: 1vh;
+}
+.mobile-head p {
+    margin-right: 1vh;
+}
+
+.mobile-home {
+    position: relative;
+    top: 10vh;
+    height: 80 vh;
+}
+
+.mobile-home-image {
+    background-image: url("images/Home.png");
+    height: 40vh;
+    background-size:cover;
+}
+
+.mobile-foot {
+    position: relative;
+    top: 6vh;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-footer-left {
+    margin-left: 1vh;
+}
+.mobile-footer-right {
+    margin-right: 1vh;
+    text-align: right;
 }

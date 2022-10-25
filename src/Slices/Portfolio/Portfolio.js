@@ -6,7 +6,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 const projects = [
     {
     key: 1,
-    title: "Flashcards!",
+    title: "Flashcards",
     description: <p>A simple web app, as part of Codecademy's courses. Users can create topics, and add quizzes to them. Quizzes contain flashcards which are user-generated. The project was built in HTML, CSS, and Javascript using React and Redux libraries.</p>,
     link: "https://ejuneau.github.io/CA_Flashcards/"
     },

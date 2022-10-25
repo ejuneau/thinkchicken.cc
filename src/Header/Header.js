@@ -1,20 +1,16 @@
 import React from 'react';
 import './Header.css';
-import Logo from '../Logo/Logo';
+import {LogoHead} from '../Logo/Logo';
 import {Navbar} from '../Directory/Directory';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.props.handleClick.bind(this);
-  }
 
   render() {
     return(
       <>
         <header>
-          <Logo />
-          <Navbar directory={this.props.directory}/>
+          <LogoHead />
+          <Navbar routes={this.props.routes}/>
         </header>
         <div className="header-shadow"></div>
       </>

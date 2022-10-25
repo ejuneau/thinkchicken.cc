@@ -3,25 +3,20 @@ import './Footer.css';
 
 
 import { Navbar } from "../Directory/Directory";
-import Logo from '../Logo/Logo';
+import {LogoFoot} from '../Logo/Logo';
 
 class Footer extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleClick = this.props.handleClick.bind(this);
-    }
-
   render() {
     return(
         <footer>
             <div className="footer-left">
-                <Logo />
+                <LogoFoot />
                 <p>A chickencloud project.</p>
-                <p>Website v6.0, 21/10/2022</p>
+                <p>Website v6.1, 24/10/2022</p>
                 <p>Snoring loudly from a closet in The Village 🏳️‍🌈</p>
             </div>
             <div className="footer-center">
-                <Navbar directory={this.props.directory}/>
+                <Navbar goToTop={this.props.goToTop} routes={this.props.routes}/>
             </div>
             <div className="footer-right">
                 <p>Follow me on: 

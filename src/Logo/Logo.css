@@ -1,0 +1,51 @@
+
+.logo-head {
+    margin-left: 1em;
+    align-self: center;
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+.logo-head h1 a{
+    display: inline-block;
+    transform: translateX(-2.73em);
+    text-decoration-color: whitesmoke;
+    transition: text-decoration-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.logo-head .fade-in a {
+    transform: translateX(-2.73em);
+    color: whitesmoke;
+    text-decoration: underline;
+    transition: color 0.2s ease, transform 0.2 ease;
+}
+.logo-head:hover h1 a {
+    transform: translateX(0);
+    color: black;
+    text-decoration-color: black;
+    transition: text-decoration-color 0.3s ease transform 0.3s ease color 0.3s ease;
+}
+
+/* same thing but for foother */
+/* I feel like code could be DRYed but I don't know how yet */
+
+.logo-foot {
+    display: flex;
+}
+.logo-foot h1 a{
+    display: inline-block;
+    transform: translateX(-2.73em);
+    text-decoration-color: #2E374D;
+    transition: text-decoration-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.logo-foot .fade-in a {
+    color: #2E374D;
+    text-decoration: underline;
+    transition: color 0.2s ease, transform 0.2 ease;
+}
+.logo-foot:hover h1 a {
+    transform: translateX(0);
+    color: whitesmoke;
+    text-decoration-color: whitesmoke;
+    transition: text-decoration-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}

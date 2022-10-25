@@ -69,7 +69,6 @@ footer .footer-left {
 }
 
 footer .footer-left h1, .footer-left p, .footer-left a {
-    margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -82,22 +81,3 @@ footer .footer-right {
     transform:translateX(-6em); /* needed to keep .footer-center centered*/
 }
 
-footer .logo h1 {
-    display: inline-block;
-    transform: translateX(-2.73em);
-    text-decoration: underline;
-    text-decoration-color: #2E374D;
-    transition: text-decoration-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-}
-footer .fade-in a {
-    color: #2E374D;
-    transition: color 0.2s;
-}
-
-footer .logo:hover .fade-in a, footer .logo:hover h1{
-    transform: translateX(0);
-    color: whitesmoke;
-    text-decoration-color:whitesmoke;
-    -webkit-transition: transform 0.3s ease,color 0.3s ease, text-decoration-color 0.3s ease;
-    transition: transform 0.3s ease,color 0.3s ease, text-decoration-color 0.3s ease; /*for compatibility*/
-}

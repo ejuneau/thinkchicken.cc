@@ -26,14 +26,6 @@
     background-color: whitesmoke;
 }
 
-#ProjectCarousel .project {
-    height: 100%;
-    margin: 0 3em;
-    min-width: 50%;
-    outline: solid 1px red;
-
-}
-
 .carousel  p {
     font-family: 'Mulish', sans-serif;
     font-size: 24px;
@@ -51,7 +43,6 @@
     all: unset;
     font-size: 1.5em;
     font-family: 'Mulish', sans-serif;
-    color: black; 
 }
 
 .carousel h4 {
@@ -90,12 +81,11 @@
 .backButton, .nextButton, .carousel a {
     text-decoration: underline;
     text-decoration-color: whitesmoke;
-    transition: text-decoration-color 0.3 ease;
+    transition: text-decoration-color 0.3s ease;
 }
 
 .backButton:hover, .nextButton:hover, .carousel a:hover {
     text-decoration-color: black;
-    transition: text-decoration-color 0.2 ease;
 }
 
 .viewProject {
