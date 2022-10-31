@@ -21,6 +21,12 @@ const projects = [
     title: "Jammming",
     description: <p>Another SPA built with React from Codecademy's courses. This project uses Spotify's API to allow users to search for artists, songs, and albums and build a custom playlist that is then saved to the user's Spotify Library.</p>,
     link: "https://ejuneau.github.io/CA_Jammming/"
+    },
+    {
+    key: 4,
+    title: "Artemis for Reddit",
+    description: <p>By far my most ambitious project. This is the Capstone project for the Front-End section of Codecademy's courses. Utilizing APIs, React, and Redux, this project will be a fully functional Reddit client once it's complete. Currently in its first iterations, this is the project that I'm working on the most at the current moment. Please come revisit the project in a few days to see what progress is done.</p>,
+    link: "https://ejuneau.github.io/CA_Artemis/"
     }
 ]
 
