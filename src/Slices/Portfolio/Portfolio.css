@@ -22,8 +22,9 @@
 
 #ProjectCarousel {
     min-width: 100%;
-    height: 25vw;
+    height: 40em;
     background-color: whitesmoke;
+    overflow: hidden;
 }
 
 .carousel  p {
@@ -52,7 +53,7 @@
     color: black;
     margin-left: 30%;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 3.5em;
     margin-bottom: 5%;
 }
 
@@ -64,15 +65,13 @@
 .buttons {
     outline: solid 0px red;
     display: flex;
-    position: relative;
-    bottom: 20vh;
+    position: absolute;
+    bottom: -500px;
     justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
 }
-.buttonSpacer {
-    width: 35%;
-
-}
-
 .dotGroup {
     position: relative;
     top: 15vh;
